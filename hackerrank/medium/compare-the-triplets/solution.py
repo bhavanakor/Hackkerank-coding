@@ -23,8 +23,6 @@ def compareTriplets(a, b):
             alice+=1
         elif i<j:
             bob+=1
-        elif i==j:
-            continue
     return [alice,bob]
             
     # Write your code here
