@@ -43,7 +43,7 @@ $-100 \le arr[i] \le 100$
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-11T17:16:22.684Z  
+**Submitted:** 2026-09-11T17:17:36.653Z  
 
 ```py
 #!/bin/python3
