@@ -63,7 +63,7 @@ The second line contains <em>3</em> space-separated integers, <em>b[0]</em>, <em
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-11T14:56:45.626Z  
+**Submitted:** 2026-09-11T15:01:49.473Z  
 
 ```py
 #!/bin/python3
@@ -91,8 +91,6 @@ def compareTriplets(a, b):
             alice+=1
         elif i<j:
             bob+=1
-        elif i==j:
-            continue
     return [alice,bob]
             
     # Write your code here
