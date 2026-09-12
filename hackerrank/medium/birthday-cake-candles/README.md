@@ -40,7 +40,7 @@ The second line contains $n$ space-separated integers, where each integer $i$ de
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T02:45:49.796Z  
+**Submitted:** 2026-09-12T02:44:42.336Z  
 
 ```py
 #!/bin/python3
