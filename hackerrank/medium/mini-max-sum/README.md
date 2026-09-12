@@ -40,7 +40,7 @@ $1 \le arr[i] \le 10^9$
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T02:36:35.004Z  
+**Submitted:** 2026-09-12T02:37:19.727Z  
 
 ```py
 #!/bin/python3
