@@ -25,7 +25,7 @@ Explanation: The reverse of 10 is 1 (leading zero is discarded), and 10 raised t
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T15:39:20.541Z  
+**Submitted:** 2026-10-19T15:39:25.479Z  
 
 ```py
 class Solution:
