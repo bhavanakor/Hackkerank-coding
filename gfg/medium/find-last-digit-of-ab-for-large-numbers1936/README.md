@@ -31,7 +31,7 @@ a and b do not contain any leading zeros, except when number itself is "0"
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T14:38:39.094Z  
+**Submitted:** 2026-10-19T14:38:44.182Z  
 
 ```py
 class Solution:
