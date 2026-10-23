@@ -28,7 +28,7 @@ Explanation: a[] and b[] have only one common value, 2. All others elements are 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T13:46:38.959Z  
+**Submitted:** 2026-10-23T13:52:48.925Z  
 
 ```py
 class Solution:
