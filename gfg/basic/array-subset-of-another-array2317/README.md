@@ -31,7 +31,7 @@ Explanation: b[] is not a subset of a[]
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T14:33:10.693Z  
+**Submitted:** 2026-10-23T15:45:54.449Z  
 
 ```py
 class Solution:
