@@ -25,12 +25,13 @@ Explanation: After rotating clock-wise 3 comes in first position.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T14:06:44.998Z  
+**Submitted:** 2026-10-23T14:07:00.322Z  
 
 ```py
 class Solution:
     def rotate(self, arr: list[int]) -> None:
         arr[:]=arr[len(arr)-1:]+arr[:len(arr)-1]
+        return arr
 ```
 
 ---
