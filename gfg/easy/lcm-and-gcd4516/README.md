@@ -32,7 +32,7 @@ Explanation: LCM of 1 and 1 is 1, while their GCD is 1.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T04:31:46.626Z  
+**Submitted:** 2026-10-23T05:26:28.157Z  
 
 ```py
 class Solution:
