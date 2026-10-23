@@ -37,7 +37,7 @@ Explanation: Only 1 is present so the missing element is 2.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-22T17:09:21.355Z  
+**Submitted:** 2026-10-23T02:44:23.635Z  
 
 ```py
 class Solution:
