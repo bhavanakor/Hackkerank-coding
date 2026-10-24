@@ -1,14 +1,12 @@
 class Solution:
     def smallestSubstring(self, s):
+        seen={'0':-1,'1':-1,'2':-1}
         left=0
-        window=""
         min_len=float('inf')
-        count={'0':0, '1':0,'2':0}
         for right in range(len(s)):
-            count[s[right]]+=1
-            while count['0'] >0 and count['1']>0 and count['2']>0:
-                min_len=min(min_len,right-left+1)
-                count[s[left]]-=1
-                left+=1
+            seen[s[right]]=right
+            if seen['0']!=-1 and seen['1']!=-1 and seen['2']!=-1:
+                left=min(seen['0'],seen['1'],seen['2'])
+                current=right-left+1
+                min_len=min(min_len,current)
         return min_len if min_len!=float('inf') else -1
-            
