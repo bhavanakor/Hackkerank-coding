@@ -31,28 +31,26 @@ Both the strings consist of lowercase English alphabets.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-10T07:42:42.719Z  
+**Submitted:** 2026-10-25T03:40:35.435Z  
 
 ```py
 from collections import Counter
 class Solution:
     def search(self, txt, pat):
         left=0
-        pat_count=Counter(pat)
-        txt_count=Counter()
-        size=len(pat)
+        k=len(pat)
+        patc=Counter(pat)
+        winc=Counter()
         for right in range(len(txt)):
-            charin=txt[right]
-            txt_count[charin]+=1
-            if right-left+1 > size:
-                charout=txt[left]
-                txt_count[charout]-=1
-                if txt_count[charout]==0:
-                    del txt_count[charout]
+            winc[txt[right]]+=1
+            if right-left+1>k:
+                winc[txt[left]]-=1
                 left+=1
-            if pat_count==txt_count:
-                return True
+            if right-left+1==k:
+                if winc==patc:
+                    return True
         return False
+            
             
         
 ```
