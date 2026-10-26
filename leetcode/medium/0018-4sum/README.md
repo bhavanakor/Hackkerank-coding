@@ -41,53 +41,40 @@ Output: [[2,2,2,2]]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 399 ms (beats 53.07%)  
-**Memory:** 19.2 MB (beats 82.08%)  
-**Submitted:** 2026-10-26T07:46:58.261Z  
+**Runtime:** 400 ms (beats 48.22%)  
+**Memory:** 19.1 MB (beats 94.85%)  
+**Submitted:** 2026-10-26T12:03:47.008Z  
 
 ```py
 class Solution:
     def fourSum(self, nums: list[int], target: int) -> list[list[int]]:
         nums.sort()
-        n = len(nums)
-        result = []
-        
-        for i in range(n - 3):
-            # Skip duplicate values for the first element
-            if i > 0 and nums[i] == nums[i - 1]:
+        n=len(nums)
+        result=[]
+        for a in range(n-3):
+            if a>0 and nums[a]==nums[a-1]:
                 continue
-                
-            for j in range(i + 1, n - 2):
-                # Skip duplicate values for the second element
-                if j > i + 1 and nums[j] == nums[j - 1]:
+            for b in range(a+1,n-2):
+                if b>a+1 and nums[b]==nums[b-1]:
                     continue
-                
-                # Initialize two pointers
-                left = j + 1
-                right = n - 1
-                
-                while left < right:
-                    total = nums[i] + nums[j] + nums[left] + nums[right]
-                    
-                    if total == target:
-                        result.append([nums[i], nums[j], nums[left], nums[right]])
-                        left += 1
-                        right -= 1
-                        
-                        # Skip duplicate values for the third element
+                left=b+1
+                right=n-1
+                while left<right:
+                    total = nums[a] + nums[b] + nums[left] + nums[right]
+                    if total==target:
+                        result.append([nums[a],nums[b],nums[left],nums[right]])
+                        left+=1
+                        right-=1
                         while left < right and nums[left] == nums[left - 1]:
                             left += 1
-                        # Skip duplicate values for the fourth element
+
                         while left < right and nums[right] == nums[right + 1]:
                             right -= 1
-                            
-                    elif total < target:
-                        left += 1
+                    elif total<target:
+                        left+=1
                     else:
-                        right -= 1
-                        
+                        right-=1
         return result
-
 ```
 
 ---
