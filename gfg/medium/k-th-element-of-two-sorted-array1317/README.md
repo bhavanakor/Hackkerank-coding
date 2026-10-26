@@ -26,7 +26,7 @@ Explanation: Combined sorted array is [1, 4, 5, 7, 8, 10, 11, 12, 15, 17]. The 6
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T13:41:07.303Z  
+**Submitted:** 2026-10-26T13:44:28.192Z  
 
 ```py
 class Solution:
