@@ -34,7 +34,7 @@ Explanation: No triplet in the array sums to 24.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T02:50:02.533Z  
+**Submitted:** 2026-10-27T05:08:23.928Z  
 
 ```py
 class Solution:
