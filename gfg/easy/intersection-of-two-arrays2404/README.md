@@ -34,18 +34,25 @@ Explanation: The common elements are 20 and 30. In a[], 20 appears before 30, so
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T12:12:00.621Z  
+**Submitted:** 2026-10-27T06:32:47.358Z  
 
 ```py
 class Solution:
     def findIntersection(self, a: list[int], b: list[int]) -> list[int]:
-        # code here
-        setb=set(b)
+        find={}
         result=[]
-        for x in a:
-            if x in setb:
-                result.append(x)
+        for i in range(len(b)):
+            find[b[i]]=i
+        for j in a:
+            if j in find.keys():
+                result.append(j)
         return result
+                
+                
+        
+                
+                
+            
 ```
 
 ---
