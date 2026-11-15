@@ -31,6 +31,8 @@ If all assertions pass, then your solution will be  **accepted**.
 
  
 
+Original
+Python3
  **Example 1:** 
 
 ```
@@ -62,15 +64,23 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 20.5 MB (beats 79.35%)  
-**Submitted:** 2026-09-14T23:59:44.188Z  
+**Runtime:** 4 ms (beats 19.27%)  
+**Memory:** 20.6 MB (beats 12.45%)  
+**Submitted:** 2026-11-15T11:50:29.434Z  
 
 ```py
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        nums[:]=sorted(list((set(nums))))
-        return len(nums)
+        j=0
+        for i in range(len(nums)-1):
+            if nums[i]!=nums[i+1]:
+                j+=1
+                nums[j]=nums[i+1]
+        return j+1
+            
+
+
+            
 
         
 ```
