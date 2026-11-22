@@ -3,7 +3,7 @@ class Solution:
         string="".join(char.lower() for char in s if char.isalnum())
         left=0
         right=len(string)-1
-        while left<right:
+        while left<=right:
             if string[left]!=string[right]:
                 return False
             left+=1
