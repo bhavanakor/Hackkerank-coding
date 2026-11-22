@@ -50,9 +50,9 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 12 ms (beats 14.93%)  
-**Memory:** 23.4 MB (beats 9.11%)  
-**Submitted:** 2026-11-15T12:15:00.690Z  
+**Runtime:** 11 ms (beats 27.49%)  
+**Memory:** 23.5 MB (beats 6.04%)  
+**Submitted:** 2026-11-22T05:57:35.813Z  
 
 ```py
 class Solution:
@@ -60,7 +60,7 @@ class Solution:
         string="".join(char.lower() for char in s if char.isalnum())
         left=0
         right=len(string)-1
-        while left<right:
+        while left<=right:
             if string[left]!=string[right]:
                 return False
             left+=1
