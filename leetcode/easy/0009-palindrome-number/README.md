@@ -50,9 +50,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 19 ms (beats 16.99%)  
-**Memory:** 19.3 MB (beats 11.77%)  
-**Submitted:** 2026-11-22T07:35:50.475Z  
+**Runtime:** 14 ms (beats 42.29%)  
+**Memory:** 19.2 MB (beats 38.68%)  
+**Submitted:** 2026-11-22T07:37:58.790Z  
 
 ```py
 class Solution:
@@ -63,10 +63,7 @@ class Solution:
             digit=x%10
             reverse=(reverse*10)+digit
             x//=10
-        if org==reverse:
-            return True
-        else:
-            return False
+        return org==reverse
 
 
 
