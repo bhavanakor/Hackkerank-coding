@@ -6,10 +6,7 @@ class Solution:
             digit=x%10
             reverse=(reverse*10)+digit
             x//=10
-        if org==reverse:
-            return True
-        else:
-            return False
+        return org==reverse
 
 
 
