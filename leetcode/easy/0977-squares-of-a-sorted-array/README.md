@@ -43,17 +43,30 @@ Output: [4,9,9,49,121]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 6 ms (beats 82.02%)  
-**Memory:** 20.4 MB (beats 95.50%)  
-**Submitted:** 2026-11-16T01:15:50.792Z  
+**Runtime:** 11 ms (beats 56.10%)  
+**Memory:** 21.2 MB (beats 25.50%)  
+**Submitted:** 2026-11-22T05:56:00.594Z  
 
 ```py
 class Solution:
     def sortedSquares(self, nums: list[int]) -> list[int]:
-        for x in range(len(nums)):
-            nums[x]=nums[x]*nums[x]
-        nums.sort()
-        return nums
+        n=len(nums)
+        result=n*[0]
+        left=0
+        right=n-1
+        pos=n-1
+        while left<=right:
+            if abs(nums[left])>abs(nums[right]):
+                result[pos]=nums[left]*nums[left]
+                left+=1
+                pos-=1
+            else:
+                result[pos]=nums[right]*nums[right]
+                right-=1
+                pos-=1
+        return result
+         
+
        
        
 
