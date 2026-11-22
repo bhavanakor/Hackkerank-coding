@@ -51,7 +51,7 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 19.3 MB (beats 44.49%)  
-**Submitted:** 2026-11-22T07:52:50.118Z  
+**Submitted:** 2026-11-22T07:59:38.584Z  
 
 ```py
 class Solution:
