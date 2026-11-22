@@ -49,15 +49,13 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 2 ms (beats 10.96%)  
+**Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 19.3 MB (beats 44.49%)  
-**Submitted:** 2026-11-22T07:52:00.851Z  
+**Submitted:** 2026-11-22T07:52:50.118Z  
 
 ```py
 class Solution:
     def sortColors(self, nums: list[int]) -> None:
-        left=0
-        right=len(nums)-1
         for i in range(len(nums)-1):
             j=i
             while j>=0 and nums[j]>nums[j+1]:
