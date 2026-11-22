@@ -70,8 +70,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.3 MB (beats 11.54%)  
-**Submitted:** 2026-11-22T06:13:31.610Z  
+**Memory:** 19.1 MB (beats 90.03%)  
+**Submitted:** 2026-11-22T06:14:45.241Z  
 
 ```py
 class Solution:
@@ -81,12 +81,7 @@ class Solution:
             if nums[i]!=val:
                 nums[pos],nums[i]=nums[i],nums[pos]
                 pos+=1
-        count=0
-        for x in nums:
-            if x!=val:
-                count+=1
-            else:
-                return count
+        return pos
             
             
 ```
