@@ -43,9 +43,9 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 25 ms (beats 89.05%)  
-**Memory:** 28.7 MB (beats 21.24%)  
-**Submitted:** 2026-11-24T17:06:35.183Z  
+**Runtime:** 18 ms (beats 98.15%)  
+**Memory:** 28.7 MB (beats 21.03%)  
+**Submitted:** 2026-11-25T04:49:58.756Z  
 
 ```py
 class Solution:
